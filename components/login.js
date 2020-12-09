@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Text, View, StyleSheet, TextInput } from 'react-native';
+import { Text, View, StyleSheet, TextInput, SafeAreaView,
+ImageBackground } from 'react-native';
 import Constants from 'expo-constants';
 
 
@@ -23,9 +24,10 @@ export default function App() {
   const [submittedText, setSubmittedText] = useState('');
 
   return (
+
     <View style={styles.container}>
       <Text style={styles.paragraph}>
-        Login
+        Login to Crust
       </Text>
 
       <Input label="Username:" />
@@ -39,10 +41,10 @@ export default function App() {
 export {App};
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'space-between',
-    paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1',
+    flexWrap: 1,
+    justifyContent: 'center',
+    paddingStart: Constants.statusBarHeight,
+    backgroundColor: '#F6CECE',
     padding: 8,
   },
   paragraph: {
@@ -52,7 +54,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   textInputContainer: {
-    alignSelf: 'stretch',
+    alignItems: 'stretch',
   },
 
   textInputLabel: {

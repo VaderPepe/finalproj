@@ -5,7 +5,7 @@ import { App } from './login';
 
 export default function HomeScreen({ navigation }) {
   return (
-    <View style={{ flex: 4, alignItems: 'center', justifyContent: 'space-evenly' }}>
+    <View style={{ flex: 4, backgroundColor: '#F78181', alignItems: 'center', justifyContent: 'space-evenly' }}>
     <App/>
       <Button
         title="Accept"
