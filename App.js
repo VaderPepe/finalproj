@@ -14,9 +14,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home Screen' }}/>
+        <Stack.Screen name="Firstscreen" component={Firstscreen} options={{ title: 'Welcome to Crust' }}/>
         <Stack.Screen name="Second" component={SecondScreen} options={{ title: 'Second Screen' }} />
-        <Stack.Screen name="Firstscreen" component={Firstscreen} options={{ title: 'Firstscreen' }} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ title: 'HomeScreen' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
