@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View  } from "react-native";
 
 const onPressTitle = () => {
   console.log("title pressed");
@@ -29,11 +29,29 @@ const WelcomeText = () => {
 
 const styles = StyleSheet.create({
   baseText: {
-    fontFamily: "Cochin"
+    fontFamily: "Cochin",
+    marginTop: 16,
+    paddingVertical: 8,
+    borderWidth: 0,
+    borderColor: "#20232a",
+    borderRadius: 0,
+    backgroundColor: "#red",
+    color: "#red",
+    textAlign: "center",
+    fontSize: 30,
+    fontWeight: "bold"
   },
   titleText: {
-    fontSize: 50,
-    fontWeight: "bold"
+      marginTop: 6,
+      paddingVertical: 2,
+      borderWidth: 2,
+      borderColor: "#20232a",
+      borderRadius: 6,
+      backgroundColor: "#61dafb",
+      color: "#20232a",
+      textAlign: "center",
+      fontSize: 29,
+      fontWeight: "bold"
   }
 });
 
