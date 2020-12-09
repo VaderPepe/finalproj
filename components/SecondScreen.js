@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, StyleSheet, Text, View, Button } from 'react-native';
+import { FlatList, StyleSheet, Text, View, Button, BackHandler } from 'react-native';
 
 export default function SecondScreen({navigation}) {
   const [food, setFood] = useState([
@@ -34,12 +34,9 @@ export default function SecondScreen({navigation}) {
         title="Go to contacts"
         onPress={() => navigation.navigate('Contacts')}
       />
-      <Button
-        color = '#F7BE81'
-        title="EXIT"
-        onPress={() => navigation.navigate('HomeScreen')}
-      />
+  
     </View>
+
   );
 }
 const styles = StyleSheet.create({
